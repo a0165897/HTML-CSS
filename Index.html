@@ -9,7 +9,7 @@
     <body>
         <h1>这是h1，最大的标题</h1>
         <h2>这是h2，你可以看到，标题是默认换行的</h2>
-        <h3>这是h3</h3>
+        <h3>这是h3，本页面请配合浏览器元素查看器使用</h3>
         <h4>这是h4</h4>
         <h5>这是h5</h5>
         <h6>这是h6,最小的标题</h6>
@@ -18,7 +18,66 @@
         <br>
         <p>上一行使用了一个&lt;br&gt;标签，请使用&lt;br&gt;来输入空行，而不是分割段落。</p>
         <p>上一行的&lt;和&gt;均为HTML特殊字符，与C不同，HTML有复杂的输入代码</p>
-        <p align="center">以上是HTML基础标签。本行使用了align标签，解释格式应统一使用层叠样式表,应使用text-align代替之</p>
+        <p align="center">以上是HTML基础标签。本行使用了align标签，
+        	解释格式应统一使用层叠样式表,应使用text-align代替之
+        </p>
         <hr>
+    	<p><acronym title="East China Normal University">ECNU</acronym>
+    	这是acronym，通过添加title可显示全称，H5不支持，用abbr代替。</p>
+    	<p>I guess there are many girls in 
+    		<abbr title="East China Normal University">ECNU</abbr>.
+    	</p>
+    	<address>
+    		这是地址及通讯信息，默认是斜体显示。<br />
+    		Written by <a href="https://www.pornhub.com/"><abbr title="Which is PornHub actually:)">LEEMINGKUN</abbr></a>.<br> 
+			Box 564, Disneyland<br>
+    	</address>
+    	<p><tt>TRANQUILITY in tt</tt><br />
+    		<i>TRANQUILITY in i</i><br />
+    		<b>TRANQUILITY in b</b><br />
+    		<big>TRANQUILITY in big</big><br />
+    		<small>TRANQUILITY in small</small>
+    	</p>
+		<p>bdi标签只有chrome支持，将标签内文字用dir规定显示方向，不列出。</p>
+		<blockquote>
+		This is blockquote. This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation.
+		把窗口拉窄试试，blockquote长引用会在引用左右留出三个缩进。这个块引用，拥有自己的空间。
+		</blockquote>
+		<p>Here comes a short quotation: 
+			<q>This is a short quotationThis is a short quotationThis is a short quotationThis is a short quotationThis is a short quotationThis is a short quotationThis is a short quotationThis is a short quotation，maybe not so short:))</q>
+			请注意，浏览器在引用的周围插入了引号。
+		</p>
+		<hr>
+		<p>以下，是一些拥有特殊语义的格式标签。你最好按照<em>语义</em>使用他们，而不是格式，因为你有<strong>层叠样式表</strong>。</p>
+		<p>dfn只用来标记术语。例如：<dfn>鲁棒性</dfn></p>
+		<p>code只用来标记代码。例如：<code>int main(){printf("I think it's OK.");}</code></p>
+		<p>samp只用来标示会引起误解的字符，不常用。例如：字符序列 <samp>ae</samp> 可能会被转换为 &aelig; 连字字符。</p>
+		<p>kbd只用来标示键盘输入的字符。例如：<kbd>ROCK AND ROLL</kbd>
+		<p>cite只用来定义引用。例如：<cite>Only when it's truly dark, will you see stars.</cite>
+		<p>var用来定义变量。<var>count</var>，常与code和pre连用来输入代码。
+		<pre><code>int main(){
+    int <var>count</var>;
+    printf("YOOO");
+}</code></pre>
+		<p>因为空格转换的原因，html文档真的很丑。</p>
+		<hr>
+		<p>还有一些格式标签。</p>
+		<p>mark用来高亮。例如：my english name is <mark>Mark</mark> in high school.</p>
+		<p>meter用来显示量度，但是IE不兼容（H5）。例如：<meter value="0.4">40%(缺省显示)</meter></p>
+		<p>pre定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。见上文的代码。</p>
+		<p>progress是进度条，有二态，很有意思。（H5,IE9以前不支持）<br>
+		一态：<progress value="95" max="100">95%</progress><br />
+		二态：<progress>不标识具体值（FIREFOX会鸡贼地直接标示成100%）</progress>
+		</p>
+		<p>time标签不会改变格式，但是浏览器和搜索引擎会识别，也许会有好事发生。</p>
+		<p>我们每天早上<time>12:30</time>开始上班</p>
+		<p>我的<time datetime="1927-03-11">生日</time>是民国15年。</p>
+		<p>wbr，word break opportunity，不改变格式，插入长单词，告知浏览器换行时机，不支持IE（H5）。
+		<p>例如：Dontconcern<wbr>toomuch<wbr>aboutyour<wbr>health,<wbr>whenyouare<wbr>struggling.收窄浏览器，看看她会怎么换行。</p>
+    	<p>对比：Dontconcerntoomuchaboutyourhealth,whenyouarestruggling.收窄浏览器，看看她会怎么换行。</p>
+    	<p><nobr>对比：Dontconcerntoomuchaboutyourhealth,whenyouarestruggling.收窄浏览器，看看她会怎么换行。</nobr></p>
+    	<p>上标<sup>上标</sup>，下标<sub>下标</sub></p>
+    	<p>最后一个格式标签ruby，和ruby语言没有关系，显示亚洲注音（中文，日文）</p>
+    	<p>例如：<ruby>漢 <rt> ㄏㄢˋ </rt></ruby></p>
     </body>
 </html>
