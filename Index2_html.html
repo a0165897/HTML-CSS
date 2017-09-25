@@ -2,10 +2,28 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>接着Index</title>
+		<title>HTML CORE</title>
 	</head>
 	<body>
-		<p>还有一些格式标签。</p>
-		
+		<hr>
+		<p>HTML表单</p>
+		<p>form标签为用户输入创建HTML表单</p>
+		<p>表单包含input标签的众多元素，以及menus,textarea,fidleset,label，总之凡是输入信息的都可包含在表单里</p>
+		<form>
+			<p>input标签的多个type属性值：</p>
+			<input type="text" autofocus="autofocus" />text文本框，默认20字符<br>
+			<input type="password" placeholder="WRITE YOUR PASSWORD WAHHAHAHAHA"/>密码pasword<br>
+			<input type="radio" name="radio1"/><input type="radio" name="radio1"/>单选按钮，按钮同一name<br>
+			<input type="reset" />重置按钮，重置所有数据<br>
+			<input type="submit" />提交按钮，发送表单到server<br>
+			<input type="image" src="picture/icon1.jpg" height=50px>用图片做提交按钮<br>
+			<input type="button" onclick="msg()">一个单纯的按钮，常点击调用js脚本。<br>
+			<input type="checkbox" name="cb1" checked="checked"><input type="checkbox" disabled="disabled" name="cb1">复选按钮，类似单选，<br>
+			<input type="email">E-mail,自动验证格式<br>
+			<p>还有一些H5的新input特性，不一一列举。</p>
+			<p>textarea标签</p>
+			<textarea rows="4" cols="10">容纳无限量文本，可以回车换行。</textarea>
+
+		</form>
 	</body>
 </html>
