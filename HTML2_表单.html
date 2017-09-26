@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML CORE</title>
+	</head>
+	<body>
+		<hr>
+		<p>HTML表单</p>
+		<p>form标签为用户输入创建HTML表单</p>
+		<p>表单包含input标签的众多元素，以及menus,textarea,fidleset,label，总之凡是输入信息的都可包含在表单里</p>
+
+		<form>
+			<p>input标签的多个type属性值：</p>
+			<input type="text" autofocus="autofocus" />text文本框，默认20字符<br>
+			<input type="password" placeholder="WRITE YOUR PASSWORD WAHHAHAHAHA"/>密码pasword<br>
+			<input type="radio" name="radio1"/><input type="radio" name="radio1"/>单选按钮，按钮同一name<br>
+			<input type="reset" />重置按钮，重置所有数据<br>
+			<input type="submit" />提交按钮，发送表单到server<br>
+			<input type="image" src="picture/icon1.jpg" height=50px>用图片做提交按钮<br>
+			<input type="button" onclick="msg()">一个单纯的按钮，常点击调用js脚本。<br>
+			<input type="checkbox" name="cb1" checked="checked"><input type="checkbox" disabled="disabled" name="cb1">复选按钮，类似单选，<br>
+			<input type="email">E-mail,自动验证格式<br>
+			<p>还有一些H5的新input特性，不一一列举。</p>
+
+			<p>textarea标签</p>
+
+			<textarea rows="4" cols="10">容纳无限量文本，可以回车换行。</textarea><br>
+
+			<button type="button">button比起input-type-button可以插入图片。</button><br>
+
+			<select>
+				<optgroup label="第一组">
+					<option value="1">select和option一起用，下拉列表。</option>
+					<option value="2">option-value属性，决定送往服务器的值。</option>
+					<option value="3">换句话说，这两标签一属性，缺一不可。</option>
+				</optgroup>
+				<optgroup label="第二组，这是optgroup标签。">
+					<option value="1">select和option一起用，下拉列表。</option>
+					<option value="2">option-value属性，决定送往服务器的值。</option>
+					<option value="3">换句话说，这两标签一属性，缺一不可。</option>
+				</optgroup>
+			</select><br>
+
+			<label for="male">male for-id——label标签for属性和input中id属性关联，点击此处，跳转到male input</label><br><br><br>
+			<input type="text" id="male" placeholder="id == male"/><br>
+
+			<p>filedset是一个丑萌的东西。</p>
+			<fieldset>
+				<legend>legend是fieldset的标题，丑绝了。</legend>
+				身高：<input type="text">
+				体重:<input type="text">
+			</fieldset>
+
+			<input list="cars"/>
+			<datalist id="cars">
+				<option value="下拉列表datalist">
+				<option value="和input-list属性绑定">
+				<option value="input是text属性">
+			</datalist>
+
+			<br><br><br>
+		</form>
+	<p>表单的用处是向服务器发送或者接受信息，所以form有两个属性:<br>action，跟着URL，指定server中哪个asp脚本处理表单<br>method，服务器处理的方法，get,post等。</p>
+	</body>
+</html>
