@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
-    <p>列表</p>
-    <ul>
+<a href="#song">消愁</a>
+<p class="listp"><span class="listnm">列表</span></p>
+    <ul class="a">
         <li>泰国</li>
         <li>新加坡</li>
         <li>印度尼西亚</li>
         <li>沙巴</li>
     </ul>
-    <ol>
+    <ol class="b">
         <li>清华大学</li>
         <li>复旦大学</li>
         <li>蓝翔职业技术学院</li>
         <li>上海交通大学</li>
     </ol>
-    <dl>
+    <dl class="c">
         <dt>汽车</dt>
         <dd>嘟嘟嘟</dd>
         <dt>轮船</dt>
         <dd>呜呜呜</dd>
+        <dt class="tor">小乌龟</dt>
+        <dd>啪啪啪</dd>
     </dl>
     <p>还有一些没有浏览器支持，命比纸薄的列表标签，不列出了。</p>
     <hr>
@@ -73,14 +77,14 @@
     <img src="img/full.jpg" height="409" width="300" usemap="#mao"/>
     <map name="mao" >
         <area shape="circle" coords="150,0,180" href="img/up.jpg">
-        <area shape="circle" coords="150,400,180" href="img/down.jpg">
+        <area shape="circle" coords="150,400,180" href="../HTML-CSS/img/down.jpg">
     </map>
     <p>毛主席上半身衣服的图片链接只有在IE是坏掉的，不知道为什么。</p>
     <hr>
     <div align="center">
         <article>
             <header>
-                <h2>消愁</h2>
+                <h2 id="song">消愁</h2>
                 <p>毛不易</p>
             </header>
             <section>
@@ -118,7 +122,7 @@
                 LEE MINGKUN HTML
             </footer>
         </article>
-        <audio loop="loop" src="http://fs.w.kugou.com/201709281420/b7afbffae9de2e3990833e97d9ee659c/G105/M09/1B/03/qQ0DAFl8mayAfy2rACvNgpV-a_o638.mp3" controls="controls" autoplay="autoplay">
+        <audio loop="loop" src="http://fs.w.kugou.com/201709281420/b7afbffae9de2e3990833e97d9ee659c/G105/M09/1B/03/qQ0DAFl8mayAfy2rACvNgpV-a_o638.mp3" controls="controls">
         毛不易——消愁。
         </audio>
     </div>
